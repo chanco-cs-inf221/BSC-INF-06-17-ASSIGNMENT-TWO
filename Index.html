@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+            <title>My website</title>
+            <link rel="stylesheet" href="Index.css">
+            <meta name="viewport" content="width=device-width, inintial-sacle=1">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           
+      </head>
+         <body class="body" id="body">
+<!--THE HEADER CONTAINING HOME, ABOUT AND CONTACTS--> 
+
+         <div class="header">     
+            <header>
+                 
+                    <div class="topnav">
+                            <div class="home" id="home">
+                                  <a href="home.html"a class="active" href="#home">HOME</a></div>
+                            
+                            <div class="about" id="about">
+                                  <a href="about.html"a class="about"href="#about">ABOUT</a></div>
+                            
+                            <div class="contacts" id="contacts"> 
+                                  <a href="contacts.html"a class="contacts"href="#contact">CONTACTS</a></div>
+                           
+                         </div>
+                </header> 
+            </div> 
+               
+<!--THE PAGE NAME-->
+               <fieldset class="fieldset1">
+                   <div class="name">
+                      <h3 align="center" style="color:rgb(12, 54, 54)"> <b> CLIFTON MANDANDA</b></h3>
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                      <div class="img"><img src="clif4.jpg" alt=""></div> 
+                   </div>
+                </fieldset>
+
+                   
+
+
+                   <script language="JavaScript">
+                         // get the field variable
+                              function saveDetails(){
+                                     if(typeof(localStorage) != 'undefined'){  
+                                        var firstName = document.getElementById('field1').value;
+                                        localStorage.field1 = firstName;
+                                        var sirName = document.getElementById('field2').value;
+                                        localStorage.field2 = sirName;
+                                        var projectName = document.getElementById('field3').value;
+                                        localStorage.field3 = projectName;
+                                        var CompletionDate = document.getElementById('field4').value;
+                                        localStorage.field4 = CompletionDate;
+                                        var projectDescription = document.getElementById('field5').value;
+                                        localStorage.field5 = projectDescription;
+                                        //job details
+                                        var organisationName = document.getElementById('field6').value;
+                                        localStorage.field6 = organisationName;
+                                        var dateEmployed = document.getElementById('field7').value;
+                                        localStorage.field7 = dateEmployed;
+                                        var positon = document.getElementById('field8').value;
+                                        localStorage.field8 = positon;
+                                        var workDescription = document.getElementById('field9').value;
+                                        localStorage.field9 = workDescription;
+                         // storing the field data
+                                        var display = document.createElement("h3");
+                                             localStorage.field1;
+                                           
+                                        var  field1 = document.createTextNode(localStorage. field3);
+                                        
+                        
+                         // displaying the stored data           
+                                        display.appendChild(field1);
+                                        var inclement = document.getElementById("newProjects");
+                                        inclement.appendChild(display);
+                                      
+                                       
+                        //event listener
+                                       display.addEventListener('click', function(){
+                                             document.write("--FIRST NAME :"+localStorage.field1);
+                                             document.write("--SIR NAME :"+localStorage.field2);
+                                             document.write("--PROJECT NAME :"+localStorage.field3);
+                                             document.write("--COMPLETION DATE :"+localStorage.field4);
+                                             document.write("--PROJECT DESCRIPTION"+localStorage.field5);
+                                             document.write("--ORG.NAME :"+localStorage.field6);
+                                             document.write("--DATE OF EMPLOYMENT :"+localStorage.field7);
+                                             document.write("--WORK POSITION :"+localStorage.field8);
+                                             document.write("--WORK DESCRIPTION :"+localStorage.field9);
+                                       
+                                       })                                                                         
+                                    }
+                                   //CLEARING THE FIELD SPACE
+                               if (document.getElementById("field1").value !== "")
+                                      var clear = document.getElementById("field1");
+                                      document.getElementById("field1").value="";
+                                    
+                                     (document.getElementById("field2").value !== "")
+                                      var clear = document.getElementById("field2");
+                                      document.getElementById("field2").value="";
+                              
+                              (document.getElementById("field3").value !== "")
+                                      var clear = document.getElementById("field3");
+                                      document.getElementById("field3").value="";
+
+                              (document.getElementById("field4").value !== "")
+                                      var clear = document.getElementById("field4");
+                                      document.getElementById("field4").value="";
+
+                              (document.getElementById("field5").value !== "")
+                                      var clear = document.getElementById("field5");
+                                      document.getElementById("field5").value="";
+
+                              (document.getElementById("field6").value !== "")
+                                      var clear = document.getElementById("field6");
+                                      document.getElementById("field6").value="";
+
+                              (document.getElementById("field7").value !== "")
+                                      var clear = document.getElementById("field7");
+                                      document.getElementById("field7").value="";
+
+                              (document.getElementById("field8").value !== "")
+                                      var clear = document.getElementById("field8");
+                                      document.getElementById("field8").value="";
+
+                              (document.getElementById("field9").value !== "")
+                                      var clear = document.getElementById("field9");
+                                      document.getElementById("field9").value="";
+
+                              }   
+                     </script>
+
+<!--FORMS NEDED TO BE FILLED BY THE USER-->
+                    <div class="forms" id="forms">
+                          <fieldset class="fieldset2" style="background-color:tan">
+                            <h3 style="color:rgb(12, 54, 54)" align=center>PROJECT FORM</h3>
+                            
+                                  <!--form 1-->
+                                
+                          <div class="form-style-9">
+                                    <ol>
+                                         <ol>
+                                             <input type="text" name="field1" id="field1" class="field-style field-split align-right" placeholder="First Name" /> <br> <br>
+                                             <input type="text" name="field2" id="field2" class="field-style field-split align-right" placeholder="Sir Name" /> <br> <br>
+                                
+                                         </ol>
+                                         <ol>
+                                             <input type="text" name="field3" id="field3" class="field-style field-split align-right" placeholder="Project Name" /> <br> <br>
+                                             <input type="date" name="field4" id="field4" class="field-style field-split align-right" placeholder="Completion Date" /> <br> <br>
+                                         </ol>
+                                         <ol>
+                                            <textarea name="field5" id="field5" class="field-style" placeholder="project Description"></textarea>
+                                         </ol>
+                                         <ol>
+                                             <input type="submit" onclick ="return saveDetails()"value="Send Project" />
+                                             
+                                         </ol> 
+                                    </ol> 
+                              </div>
+                                
+                          </fieldset>
+                          <!--display area-->
+                          <fieldset class="fieldset3">
+                                <h3 align="center" style="color:rgb(248, 252, 252)">NEW  PROJECTS</h3>
+                              <div class="newProjects" id="newProjects"> </div> 
+                          </fieldset>
+                      
+                      <!--FORM FOR JOB EXPERIENCED-->
+ 
+                          
+                          <fieldset class="fieldset4">
+                                
+                                <h3 align="center" style="color:rgb(12, 54, 54)">WORK EXPERIENCE FORM</h3>
+                                <div class="form-style-9">
+                                    
+                                          <ol>
+                                                   
+                                                   <ol>
+                                                       <input type="text" name="field6" id="field6" class="field-style field-split align-right" placeholder="Organisation worked for" /> <br> <br>
+                                                       <input type="date" name="field7" id="field7" class="field-style field-split align-right" placeholder="Date of employment" /> <br> <br>
+                                                   </ol>
+                                                   <ol>
+                                                       <input type="text" name="field8" id="field8" class="field-style field-full align-none" placeholder="your position in the organisation" />
+                                                   </ol>
+                                                   <ol>
+                                                       <textarea name="field9" id="field9" class="field-style" placeholder="Work Description"></textarea>
+                                                   </ol>
+                                                   <ol>
+                                                            <input type="submit" onclick ="return saveDetails()"value="Send Work Experience" />
+                                                   </ol>
+                                             </ol>
+                                          </div>
+                          </fieldset>
+                         
+                  </div>
+             
+<!--MY OLD PROJECTS-->
+                   
+                  <div class="oldProjects" id="oldProjects">
+                              <div class="title"><h3 style="color:rgb(12, 54, 54)" align=center> OLD PROJECTS</h3></div>
+                              
+                                   <div class="projects" id="project1" align="center">
+                                    <h4>PROJECT ONE</h4>
+                                        <h5>SECONDARY SCHOOL`S MANAGING SYSTEM(SSMS)</h5>
+                                            <P>DISCRIPTION <br>
+                                                    The aim of this project is to come up with an on line web applicationt
+                                                    that will replace the paper based system where teachers has to sign
+                                                    in a hard book they moment they report in for work.
+                                                    indsted of that system,the teacher will be just log-on in the system
+                                                    and do every thing
+                                                    <h5>PROGRESS</h5>
+                       
+                                                     <p>The project is in its youthful stage</p>
+                       
+                                              </P>
+                                        </h5>
+                                    </div> <br>
+                                   
+                                    <div class="projects" id="project2" align="center">
+                                    <h4>PROJECT TWO</h4>
+                                        <h5>SMART BULB
+                                            <P>DISCRIPTION <br>
+                                                    THe idea is to develope a bulb that will be controld
+                                                    remotely using wireless conections like wifi.
+                                                    One should be able to turn it off and on using the phone or
+                                                    set the auto shatdown time and the auto turn on time
+                       
+                                                    <h5>PROGRESS</h5>
+                                                      <p>The project is in its youthful stage</p>
+                                             </p>
+                                        </h5>
+                                    </div>
+                       
+                                    <div class="projects" id="project3" align="center">
+                                    <h4>PROJECT THREE</h4>
+                                        <h5>MEDIA FILES LOCKER
+                                            <P>DISCRIPTION <br>
+                                                    This on am going to develope an app that will be able detect all media 
+                                                    in the device installed and be able to aply a lock to them.
+                                                    The lock once locked it will be unlockng its self after some time the user set
+                                                    because the key be going together the time the user like to lock his or her media files.
+                       
+                                                    <h5>PROGRESS</h5>
+                                                      <p>The project is in its youthful stage</p>
+                                            </P>
+                                        </h5>
+                                    </div>
+                         </div>
+                        
+          <!--THE FOOTER-->  
+               <div class="footer" id="footer">
+                  <!--<h4 style="color:brown" align="center">Footer</h4>--> 
+                       <p style="color:darkcyan" style="left:10%;">
+                          Developed by: clifton mandanda <br>
+                          Contact number: +265 882 624 62<br> 
+                                                                                allrights reseved  
+                         </p>
+                        </div>
+                </body>
+  </html>

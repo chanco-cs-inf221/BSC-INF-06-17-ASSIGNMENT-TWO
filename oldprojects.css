@@ -1,0 +1,46 @@
+   
+   .projectsOld{
+    background: seagreen;
+    position:absolute;
+    top: 7%;
+    border:4px solid greenyellow;
+        }
+    
+   .titleOld{
+
+    
+    position: absolute;
+    top: 1%;
+    color: rgb(8, 119, 119);
+    left: 44%;
+  }
+  #projectsOld1{
+   
+    color: black;
+    padding: 4%;
+    border: 2% solid black;
+    width: 20%;
+    height: 50%;
+    
+    
+    
+
+   }
+   #projectsOld2{
+    color: black;
+    padding: 4%;
+    border: 2% solid black;
+    left: 90%;
+    width: 20%;
+    height: 50%;
+    top: 20%;
+    
+   }
+   #projectsOld3{
+     padding: 4%;
+    border: 10% solid black;
+    right: 2%;
+    width: 20%;
+    height: 50%;
+    
+   }
